@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import styled from 'styled-components';
 import { Route, Switch } from 'react-router-dom';
 import HomePage from './components/HomePage';
@@ -12,17 +12,7 @@ const Wrapper = styled.div`
   align-items: center;
 `
 const App = () => {
-  const [ formValues, setFormValues ] = useState({
-    name: '',
-    size: '',
-    specialInstructions: '',
-  })
-  const [ toppings, setToppings ] =useState({
-    pepperoni: false, 
-    canadianBacon: false, 
-    sausage: false, 
-    bellPeppers: false,
-  })
+  
   return (
     <>
       <h1>Lambda Eats</h1>
@@ -31,7 +21,7 @@ const App = () => {
         <NavBar />
         <Switch>
           <Route path = '/pizza'>
-            <PizzaForm formValues = {formValues} toppings = {toppings} />
+            <PizzaForm />
           </Route>
           <Route path = '/'>
             <HomePage />
