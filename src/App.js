@@ -6,9 +6,9 @@ import PizzaForm from './components/PizzaForm';
 import NavBar from './components/NavBar';
 
 const Wrapper = styled.div`
-  max-widt: 100%;
+  max-width: 100%;
   display: flex;
-  flex-direction column;
+  flex-direction: column;
   align-items: center;
 `
 const App = () => {
