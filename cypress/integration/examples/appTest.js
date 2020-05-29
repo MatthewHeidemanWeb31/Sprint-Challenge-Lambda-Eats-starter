@@ -1,6 +1,11 @@
+import cy from 'cypress';
+
 describe('Form Test', function () {
-    //Arrange
+
     it('Test user onboard', function() {
-    // Act
-    cy.vist("index.html")
-})
+  
+    cy.visit("http://10.48.0.35/pizza");
+
+    cy.get('input[name="name"]').text();
+    
+})})
